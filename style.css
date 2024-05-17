@@ -103,12 +103,87 @@ header{
 
 
 
+/* --------------------------------------Icons----------------------------------------------------------------- */
+
+
+
+.category-list{
+    margin-top: 16px;
+}
+
+.icon-img img{
+    height: 24px;
+    width: 24px;
+}
+
+.icon-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.category-grid{
+    display: grid;
+    grid-template-columns: repeat(26 ,1fr);
+    overflow: scroll;
+    gap: 27px;
+    padding: 0px 22px;
+    
+    box-shadow: 0 5px 5px -5px rgb(0, 0, 0 / 16%);
+}
+
+.category-grid::-webkit-scrollbar{
+    display: none;
+}
+
+.icon-col:nth-child(1){
+    
+    opacity: 1;
+    width: 32px;
+    border-bottom: 2px solid black;
+}
+
+.icon-col{
+    opacity: 0.5;
+    /* padding: 4px 0px; */
+    height: 59px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.icon-col:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-bottom: 2px solid #dddddd;
+    transition: 0.2s;
+}
+
+.icon-text{
+    font-family: airbnb-medium;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+
+}
+
+
+.next-icon{
+    display: none;
+}
+
 /* ----------Tablet View ------------------ */
 
 @media screen and (min-width: 744px){
+
+    
     nav{
         height: 81px;
-        margin-bottom: 19px;
+        margin-bottom: 5px;
         padding: 14px 40px 0px 24px;
         border-bottom: 1px solid #dbd6d6;
     }
@@ -268,7 +343,57 @@ header{
 
     }
 
-}
+
+    /* ------------------------------------------Icons768-------------------------------------------------------- */
+    
+
+    .category-flex{
+        padding-right: 40px;
+    }
+    .category-container{
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        padding: 0 40px
+    }
+
+    .category-grid{
+        gap: 20px;
+        padding: 0px;
+        margin-top: 9px;
+        box-shadow: none;
+    }
+
+    .category-list{
+        margin-top: 0px;
+    }
+
+    .icon-col:nth-child(1){
+        width: 39px;
+        border-bottom: 2px solid black;
+    }
+
+    .next-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 2px solid #c1c1c1;
+        height: 1px;
+        width: 24px;
+        padding: 14px;
+        /* padding: 2px; */
+        border-radius: 99999px;
+    }
+
+    .next-icon img{
+        height: 12px;
+        width: 12px;
+    }
+
+
+
+} 
 
 @media screen and (min-width:757px){
     .st3 div{
