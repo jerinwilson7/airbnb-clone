@@ -297,6 +297,101 @@ main{
 
 }
 
+/* -------------------FutureContents---------------------------- */
+
+.future-container{
+    width: 100%;
+    background: #f7f7f7;
+}
+
+.future-section{
+    display: flex;
+    max-width: 1440px;
+    padding: 48px 24px;
+}
+
+.future-main-container{
+    width: 100%;
+}
+
+.future-main-container h2 {
+
+    color: #222222;
+    font-size: 22px;
+    font-family: airbnb-bold;
+    font-weight: 600;
+    letter-spacing: -0.22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.future-contents-container{
+    width: 100%;
+}
+
+.future-header-scroll{
+    /* display: flex; */
+    position: relative
+    ;
+    padding: 0 12px;
+    margin: 0 -12px;
+}
+
+.future-scroll-flex{
+    display: flex;
+    line-height: 20.02px;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+    overflow-x: scroll;
+    border-bottom: 1px solid #dddddd;
+}
+
+.future-scroll-flex::-webkit-scrollbar{
+    display: none;
+}
+
+.future-scroll-text{
+    display: flex;
+    margin: 6px 6px 0px 0px;
+    padding: 10px;
+    line-height: 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    /* border-radius: 8px; */
+    font-family: airbnb-regular;
+    color: #6a6a6a;
+}
+
+.future-scroll-text:nth-child(1){
+    margin-left: -10px;
+    color: #000000;
+    border-bottom: 2px solid black;
+}
+
+.future-header-scroll button{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(3px 3px 10px black);
+    height: 50px;
+    width: 50px;
+   
+    
+}
+
+.fa-chevron-right{
+    font-size: 16px;
+}
+
+
+
+.future-list-container ul li:nth-child(n+5){
+    display: none;
+}
+
+
 /* -----------------------------550px---------------------------------- */
 
 @media screen and (min-width:550px){
