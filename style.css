@@ -232,12 +232,11 @@ main{
 }
 
 .item-img-container img{
-    max-height: 500px;
-    height: 100%;
     width: 100%;
     /* position: absolute; */
     object-fit: cover;
     border-radius: 13px;
+    aspect-ratio: 315.8 / 300.01;
 }
 
 
