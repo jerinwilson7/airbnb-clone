@@ -1040,6 +1040,31 @@ section ul li{
         padding-inline: 40px;
     }
 
+    .footer-nav{
+        display: none;
+    }
+
+    .language-social-container{
+        display: flex;
+        margin-bottom: 16px;
+        justify-content: center;
+
+    }
+
+    .copy-rs{
+        display: none;
+    }
+
+    .language-container{
+        display: flex;
+
+    }
+
+    .language{
+        
+    }
+    
+
 } 
 
 @media screen and (min-width:757px){
