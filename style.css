@@ -20,6 +20,15 @@
 }
 
 
+@font-face {
+    font-family: Circular;
+    unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F, U+FF00-EFFFF, U+FFFFE-10FFFF;
+    font-weight: 800;
+    font-style: normal;
+    src: url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"),url("/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+    font-display: swap
+}
+
 /* icons-scroll */
 
 /* .learn-icons{
@@ -541,11 +550,16 @@ main{
 
 
     .profile-container{
+        height: 48px;
+        width: 86px;
+    }
+
+    .profile-child-container{
         display: flex;
+        border-radius: 30px;
+        padding: 8px 8px 2px 14px;
         align-items: center;
-        gap: 12px;
-        padding: 5px 4px 0px 14px;
-        border-radius: 21px;
+        text-align: center;
         border: 1px solid #dddddd;
     }
 
@@ -562,6 +576,8 @@ main{
     .profile-div img{
         height: 32px;
         width: 32px;
+        flex: 0 0 32px;
+        margin-left: 14px;
     }
 
     .language-icon{
@@ -572,9 +588,9 @@ main{
 
     .header-text{
         font-size: 14px;
-        font-family: airbnb-regular;
+        font-family: airbnb-medium;
         color: #222222;
-        font-weight: 600;
+        /* font-weight: 600; */
         line-height: 1.125rem;
 
     }
@@ -787,11 +803,7 @@ main{
         transform: translateX(2px);
     }
 
-    .profile-container{
-        gap: 12px;
-        padding: 5px 5px 0px 12px;
-    }
-
+   
     .hotels-grid-container{
         grid-template-columns: repeat(3,minmax(0,1fr));
     }
