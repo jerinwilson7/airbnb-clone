@@ -1261,6 +1261,32 @@ section ul li {
   .future-list-container ul li:nth-child(n + 10) {
     display: flex;
   }
+
+
+.copyright-terms-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+.copyright-terms-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-dot{
+    display: flex;
+    transform: translateY(3px);
+}
+
+
+.privacy-container{
+    display: flex;
+}
+
+
 }
 
 @media screen and (min-width: 1024px) {
