@@ -880,6 +880,7 @@ section ul li {
     align-items: center;
     padding-left: 75px;
     padding-right: 40px;
+
   }
 
   .category-grid {
@@ -1177,17 +1178,21 @@ section ul li {
     gap: 22px;
   }
 
+  .view{
+    margin-left: -5px;
+  }
+
   .language-icon {
     display: flex;
     transform: translateX(2px);
   }
 
   .category-container {
-    padding: 12px 80px 0px 80px;
+    padding: 1px 80px 0px 80px;
   }
 
   .category-grid {
-    gap: 32px;
+    gap: 40px;
   }
 
   /* .icon-col:nth-child(1){
